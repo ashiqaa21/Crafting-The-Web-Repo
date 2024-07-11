@@ -15,6 +15,18 @@ app.get("/", async function (request, response) {
   response.render("index", { articles: articles });
 });
 
+app.get("/login", async function (request, response) {
+  response.render("login");
+});
+
+app.get("/register", async function (request, response) {
+  response.render("register");
+});
+
+app.get("/create", async function (request, response) {
+  response.render("new-article");
+});
+
 app.listen(8080, function () {
   console.log("Server is listening at port 5000");
 });
